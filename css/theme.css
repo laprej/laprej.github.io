@@ -1,0 +1,315 @@
+
+@font-face { font-family: Hasklig; src: url('../fonts/Hasklig-Light.otf'); }
+@font-face { font-family: Lora; src: url('../fonts/Lora-Regular.ttf'); }
+@font-face { font-family: Lora; src: url('../fonts/Lora-Bold.ttf'); font-weight: bold; }
+@font-face { font-family: Lora; src: url('../fonts/Lora-Italic.ttf'); font-style: italic; }
+@font-face { font-family: Lora; src: url('../fonts/Lora-BoldItalic.ttf'); font-weight: bold; font-style: italic; }
+
+@font-face { font-family: Lato; src: url('../fonts/Lato-Light.ttf'); }
+@font-face { font-family: Lato; src: url('../fonts/Lato-Semibold.ttf'); font-weight: bold; }
+@font-face { font-family: Lato; src: url('../fonts/Lato-LightItalic.ttf'); font-style: italic; }
+@font-face { font-family: Lato; src: url('../fonts/Lato-SemiboldItalic.ttf'); font-weight: bold; font-style: italic; }
+
+@font-face { font-family: Merriweather; src: url('../fonts/Merriweather-Light.ttf'); }
+@font-face { font-family: Merriweather; src: url('../fonts/Merriweather-Bold.ttf'); font-weight: bold; }
+@font-face { font-family: Merriweather; src: url('../fonts/Merriweather-LightIt.ttf'); font-style: italic; }
+@font-face { font-family: Merriweather; src: url('../fonts/Merriweather-BoldIt.ttf'); font-weight: bold; font-style: italic; }
+
+
+/* Space out content a bit */
+body {
+  font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#feed-icon {
+  filter: grayscale(100%) opacity(0.5);
+  -webkit-filter: grayscale(100%) opacity(0.5);
+  height: 15px;
+/*  float: right;*/
+}
+
+#feed-icon:hover {
+  filter: grayscale(0%) opacity(1.0);
+  -webkit-filter: grayscale(0%) opacity(1.0);
+}
+
+
+/*p {
+  margin: 0 0 4px;
+}*/
+
+blockquote {
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Front page news. */
+ul.news .date {
+    color: #999;
+    font-weight: bold;
+    font-size: 0.8em;
+    display: block;
+}
+ul.news > li {
+    margin-top: 0.8em;
+}
+ul.news .shortnews .date {
+/*    float: left;*/
+    margin-right: 1em;
+}
+ul.news .bloglink a {
+    font-size: 1em;
+}
+
+div.pub {
+  margin-bottom: 10px;
+}
+
+#twitter-widget-0 {
+  width: 100% !important;
+  float: none;
+}
+
+/* center knitr plots */
+p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight, pre, code {
+  font-family: Hasklig, monospace;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+}
+
+/* don't highlight errors in red */
+.highlight span.err {
+  color: inherit !important;
+  background-color: inherit !important;
+}
+
+.media {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+div.header, div.header h2, div.panel-title, h1, h2, h3 {
+  font-family: Lato, Helvetica Neue;
+}
+
+div.header {
+  margin-bottom: 20px;
+}
+div.header h2, div.panel-title {
+  font-weight: normal;
+}
+
+h1 {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.nav li a {
+  padding: 8px;
+}
+
+.nav img {
+/*  background-color: #222;*/
+  padding: 0px;
+  margin: 0px;
+}
+
+pre.inset {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+code {
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* force image to shrink to fit on screen */
+img { max-width: 100%; }
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 0.8em;
+}
+.footer p {
+  margin: 0.1em 0;
+}
+.footer a:link, .footer a:visited {
+  color: #777;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Jumbotron */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron p {
+    font-size: 15px;
+}
+.jumbotron {
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+/* Sampa logo */
+#logo {
+    width: 154px;
+    height: 35px;
+    margin: 2px 0 8px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* Slightly better-looking header on mobile. */
+@media screen and (max-width: 767px) {
+    .nav-pills {
+        display: block;
+        margin: 0 auto 1em;
+    }
+    #logo {
+        display: block;
+        clear: both;
+        margin: 1em auto;
+    }
+}
+
+/* Photo */
+.inset-image {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* People list */
+dl.people dd {
+    margin-bottom: 1em;
+}
+
+/* http://stackoverflow.com/questions/16937070/iframe-size-with-css-on-ios */
+#twitter-widget-0 {
+  width: 1px !important;
+  min-width: 100% !important;
+  *width: 100% !important;
+}
+
+.venue {
+  font-style: italic;
+}
+
+/*hr.figureline { display: none; }*/
+
+hr.madoko { border-bottom: 1px solid #e5e5e5; }
+figure { margin: 20px; }
+figure div { text-align: center; }
+span.heading-before { font-size: 50%; }
+
+@media print {
+
+  body {
+    font-size: 12px;
+    font-family: Lora;
+  }
+    
+  a[href]:after {
+    content: none !important;
+  }
+  
+  .nav, span.pub, .footer { display: none; }
+  
+  h1, h2, h3, h4, h5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: inherit;
+  }
+  
+  li div { margin-bottom: 5px; }
+  
+  .header h2 {
+    font-size: 30px;
+  }
+
+  .header h2, .contact {
+    text-align: center;
+  }
+  
+  p.contact {
+    margin-top: -10px;
+  }
+  
+  .header {
+    border: none;
+  }
+    
+  ul {
+    padding-left: 24px;
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Justin M. LaPre</title>
+    <link>http://www.cs.rpi.edu/~laprej/</link>
+    <description>Potentially helpful tips and tricks I've learned or made up.</description>
+    <pubDate>Fri, 18 Dec 2015 00:00:00 -0500</pubDate>
+    <item>
+      <title>Oge Approved Dissertation</title>
+      <link>http://www.cs.rpi.edu/~laprej//posts/oge-approved-dissertation.html</link>
+      <description><![CDATA[OGE has just accepted my dissertation.
+]]></description>
+      <pubDate>Fri, 18 Dec 2015 00:00:00 -0500</pubDate>
+      <guid>http://www.cs.rpi.edu/~laprej//posts/oge-approved-dissertation.html</guid>
+      <content:encoded><![CDATA[[OGE](http://gradoffice.rpi.edu) has just accepted my dissertation.
+]]></content:encoded>
+      <dc:date>2015-12-18T00:00:00-05:00</dc:date>
+    </item>
+    <item>
+      <title>Teaching Computer Organization</title>
+      <link>http://www.cs.rpi.edu/~laprej//posts/teaching-computer-organization.html</link>
+      <description><![CDATA[It has been confirmed: I am teaching CSCI 2500 Computer Organization, Spring 2016.
+I got the official e-mail from Chuck this afternoon.
+]]></description>
+      <pubDate>Wed, 16 Dec 2015 00:00:00 -0500</pubDate>
+      <guid>http://www.cs.rpi.edu/~laprej//posts/teaching-computer-organization.html</guid>
+      <content:encoded><![CDATA[It has been confirmed: I am teaching CSCI 2500 Computer Organization, Spring 2016.
+I got the official e-mail from Chuck this afternoon.
+]]></content:encoded>
+      <dc:date>2015-12-16T00:00:00-05:00</dc:date>
+    </item>
+    <dc:date>2015-12-18T00:00:00-05:00</dc:date>
+  </channel>
+</rss>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Justin M. LaPre — Project Archive</title>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@laprej">
+        <meta name="twitter:creator" content="@laprej">
+        <meta name="twitter:title" content="Project Archive">
+        <meta name="twitter:description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/madoko.css" rel="stylesheet">
+        <link href="/css/theme.css" rel="stylesheet">
+        <link href="/css/syntax.css" rel="stylesheet">
+        <!-- <link href='http://fonts.googleapis.com/css?family=News+Cycle|Inconsolata' rel='stylesheet' type='text/css'> -->
+
+        
+
+    </head>
+    <body>
+      <script src="/js/jquery-2.1.3.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-78734427-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+        <div class="container">
+          <div class="header">
+            <ul class="nav nav-pills pull-right">
+              
+              
+                <li >
+                  
+                  <a href="/" >
+                  
+                  
+                  Home
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/courses/" >
+                  
+                  
+                  Courses
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/cv.html" >
+                  
+                  
+                  CV
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/calendar.html" >
+                  
+                  
+                  Calendar
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/posts/" >
+                  
+                  
+                  Posts
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://github.com/laprej">
+                  
+                  
+                  <img src="/img/GitHub-Mark.png" srcset="/img/GitHub-Mark@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://twitter.com/laprej">
+                  
+                  
+                  <img src="/img/twitter-logo.png" srcset="/img/twitter-logo@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+            </ul>
+            <h2>Justin M. LaPre</h2>
+          </div>
+
+          <div style="text-align:justify"><h2 id="undergrad-research">Undergrad research</h2>
+
+<h3 id="citcoms-with-cuda">CitcomS with CUDA</h3>
+
+<p>In undergrad, I worked with Dr. <a href="http://www.cs.uwec.edu/%7Eernstdj/">Dan Ernst</a>, then Assistant Professor of Computer Science at the University of Wisconsin - Eau Claire, on a project to improve the performance of CitcomS using graphics processors. Funded by an internship with the <a href="http://www.shodor.org/petascale/">Undergraduate Petascale Education Program</a>, I attended a 2-week workshop on parallel and scientific computing and spent the remainder of the summer working on this project full-time. By profiling CitcomS I selected several functions to focus on. Starting with the conjugate gradient relaxation method in CitcomS&#39;s solver, I translated a computationally intensive function to run on the GPU, showing an overall speedup of 2 in simulation runtimes. The process involved finding parts of the code that needed to be refactored in order for them to work in parallel and also required learning the CUDA architecture in great detail, so I learned about memory caching and I/O bandwidth limits (it turns out the algorithm is still memory-bound). I presented a poster on this research in the Supercomputing 2010 Education Program Resource Fair in November 2010 in New Orleans, LA. The PDF of the poster is available <a href="pubs/CitcomS_SC10.pdf">here</a>.</p>
+
+<h3 id="peer-review">Peer Review</h3>
+
+<p>My freshman year of undergrad, I was brought into a project with fellow student <a href="http://www.lukekomiskey.com/">Luke Komiskey</a>, advised by Dr. <a href="http://www.cs.uwec.edu/%7Emorrisjp/nonmobile/index.html">Joline Morrison</a> and Dr. <a href="http://www.cs.uwec.edu/%7Emorriscm/">Mike Morrison</a> of the University of Wisconsin - Eau Claire. The goal of the project was to develop a cross-platform application to allow for instructors to facilitate students evaluating class assignments uploaded by their peers. Luke and I designed the database model, system design, and user interface ourselves and implemented the project in Java, deploying the application as a Java Web Start application using the JNLP interface. Interesting aspects of this project were designing the user interface, trying to keep in mind the primary use cases of the system while still allowing for a consistent, fair, and configurable experience. We published a paper on the system&#39;s database and user interface design in the Midwest Instruction and Computing Symposium (MICS) in 2009.</p>
+
+</div>
+
+          <div class="footer">
+            <p>Justin M. LaPre &#8212; <a href="http://www.cs.rpi.edu/">Computer Science Department</a> at <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a></p>
+          </div>
+        </div>
+
+      <!-- support retina -->
+      <script type="text/javascript" src="/js/srcset-polyfill.js"></script>
+
+    </body>
+</html>

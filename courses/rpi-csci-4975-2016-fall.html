@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Justin M. LaPre — CSCI 4975/6975 A Compiler Case Study LLVM</title>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@laprej">
+        <meta name="twitter:creator" content="@laprej">
+        <meta name="twitter:title" content="CSCI 4975/6975 A Compiler Case Study LLVM">
+        <meta name="twitter:description" content="Syllabus for CSCI 4975/6975 A Compiler Case Study LLVM">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/madoko.css" rel="stylesheet">
+        <link href="/css/theme.css" rel="stylesheet">
+        <link href="/css/syntax.css" rel="stylesheet">
+        <!-- <link href='http://fonts.googleapis.com/css?family=News+Cycle|Inconsolata' rel='stylesheet' type='text/css'> -->
+
+        
+
+    </head>
+    <body>
+      <script src="/js/jquery-2.1.3.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-78734427-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+        <div class="container">
+          <div class="header">
+            <ul class="nav nav-pills pull-right">
+              
+              
+                <li >
+                  
+                  <a href="/" >
+                  
+                  
+                  Home
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/courses/" >
+                  
+                  
+                  Courses
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/cv.html" >
+                  
+                  
+                  CV
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/calendar.html" >
+                  
+                  
+                  Calendar
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/posts/" >
+                  
+                  
+                  Posts
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://github.com/laprej">
+                  
+                  
+                  <img src="/img/GitHub-Mark.png" srcset="/img/GitHub-Mark@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://twitter.com/laprej">
+                  
+                  
+                  <img src="/img/twitter-logo.png" srcset="/img/twitter-logo@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+            </ul>
+            <h2>Justin M. LaPre</h2>
+          </div>
+
+          <div style="text-align:justify"><h2 id="csci-4975-6975-a-compiler-case-study-llvm">CSCI 4975/6975: A Compiler Case Study: LLVM</h2>
+
+<h3 id="fall-2016">Fall 2016</h3>
+
+<p>Dr. Justin M. LaPre<br>
+Department of Computer Science<br>
+Rensselaer Polytechnic Institute<br>
+110 8th Street Troy, New York 12180<br>
+Course web site: <a href="http://piazza.com/rpi/fall2016/csci49756975">http://piazza.com/rpi/fall2016/csci49756975</a><br>
+Office Hours: after class or by appointment.<br>
+Class Time and Location: MR 6 PM, Sage 2704</p>
+
+<p><strong>Like the Constitution, this syllabus should be considered a &quot;living document&quot; in that it is subject to change.
+You will be notified of any changes made.</strong></p>
+
+<h3 id="course-description">Course Description</h3>
+
+<p>This topics course will be compiler-oriented with a focus on the LLVM compiler in particular. LLVM is a state-of-the-art compiler that enjoys both academic interest as well as widespread industry adoption. It is a large codebase written using modern C++ techniques and design patterns; students are expected to not only read but learn from existing code. Seminal compiler/LLVM-specific papers will be assigned and critiqued on a weekly basis. Topics will include compiler backend issues such as control flow graphs, intermediate representation (IR), and compiler optimizations. Assignments will include writing various LLVM passes as well as a significant final project.</p>
+
+<p><strong>Prerequisite</strong> Undergraduate level CSCI 2300 Minimum Grade of D and Undergraduate level CSCI 2500 Minimum Grade of D.</p>
+
+<h3 id="optional-textbooks">Optional Textbooks</h3>
+
+<p><em>Getting Started with LLVM Core Libraries</em>, by Lopes and Auler.
+<a href="https://amzn.com/B00N2RWMSQ">Amazon link.</a></p>
+
+<p><em>Compilers: Principles, Techniques, and Tools</em>, by Aho, Lam, Ullman, and Sethi.
+<a href="https://amzn.com/B009TGD06W">Amazon link.</a></p>
+
+<p><em>Engineering a Compiler</em>, by Cooper and Torczon.
+<a href="https://amzn.com/B00J5AS70G">Amazon link.</a></p>
+
+<h3 id="schedule-of-topics">Schedule of Topics</h3>
+
+<ul>
+<li>What is LLVM?</li>
+<li>Intermediate representation (IR)</li>
+<li>Three-address code</li>
+<li>Static Single Assignment (SSA)</li>
+<li>Control flow graphs (CFGs)</li>
+<li>Dominators</li>
+<li>C++ meta-programming (light!)</li>
+<li>Code transformations &amp; optimizations</li>
+<li>Debug Info (DI)</li>
+<li>(Maybe) libClang / libTooling / clang frontend</li>
+<li>Weekly assigned paper discussion</li>
+<li>Weekly student presentations from <a href="http://llvm.org/pubs/">llvm.org/pubs</a></li>
+<li>Presentations of final projects</li>
+</ul>
+
+<h3 id="schedule-of-homework-and-no-class-days">Schedule of Homework and NO CLASS days</h3>
+
+<ul>
+<li>September 5, 2016 - Labor Day -- no classes.</li>
+<li>September 15, 2016 - Homework 1 is due.</li>
+<li>October 6, 2016 - Homework 2 is due.</li>
+<li>October 10, 2016 - Columbus Day -- no classes.</li>
+<li>October 11, 2016 - Classes Resume -- Follow MONDAY class schedule.</li>
+<li>October 27, 2016 - Homework 3 is due.</li>
+<li>November 17, 2016 - Homework 4 is due.</li>
+<li>November 24, 2016 - Thanksgiving break -- no classes.</li>
+<li>November 28, 2016 onward - final project presentations.</li>
+</ul>
+
+<h3 id="grading-and-other-class-policies">Grading and Other Class Policies</h3>
+
+<ul>
+<li>60%: Four homeworks</li>
+<li>25%: Final project</li>
+<li>10%: Paper presentation</li>
+<li>5%: Participation</li>
+</ul>
+
+<p><strong>Attendance Policy</strong>: As this is a seminar, attendance at lectures is <em>strongly encouraged</em>.
+You are responsible for all announcements made in lecture (e.g., any change in due dates) as well as any material posted on the course web page.</p>
+
+<p><strong>Late Assignments Policy</strong>: Three late days are permitted for assignments.
+They will be consumed in whole day increments. In other words, if you are one hour late, that will
+count as one day. 25 hours late will count as two days, etc. Once these are exhausted, late assignments
+will not be graded.</p>
+
+<p><strong>Grade Disputes</strong>: Grade disputes must be made within 10 days.
+After 10 days has elapsed, the grade on record will stand.</p>
+
+<p><strong>Grade Modifiers Policy</strong>: Grade modifiers will be used in this
+class. Nominally, for example, you expect to earn a B- if your score
+is greater than 79.5 and less than 83.0, B if your score is greater
+than 83 and less than 86, B+ if your score is greater than 86 and less
+than 89.5. The same modifier points occur for the A, C and D ranges
+except that there is no A+ nor is a D- allowed under the RPI Grade
+Modifier Policy.</p>
+
+<h3 id="academic-integrity">Academic Integrity</h3>
+
+<p>While I strongly encourage you to form study groups and work
+together in learning this material, the course project, homeworks and
+programming assignments are to be done individually unless otherwise
+noted by the assignment/project specification. What this means is that
+you should do whatever is necessary to ensure your work remains your
+work. If during in the grading
+process, it is determined that students shared or duplicated work,
+those students will automatically receive a zero for the offense.
+For a second offense, the student or
+students involved will fail this course and a report will be sent to
+the Dean of Students office which could result in additional
+disciplinary action.</p>
+
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+
+<p>By the end of this course, you will:</p>
+
+<ul>
+<li>Have gained a deeper understanding of the LLVM compiler</li>
+<li>Understand the various passes a compiler makes through your code</li>
+<li>Understand and use advanced C++ techniques and design patterns</li>
+<li>Be able to read control flow graphs</li>
+<li>Be able to read and write valid LLVM virtual instruction streams</li>
+<li>Have completed an LLVM project that interests you personally</li>
+</ul>
+
+</div>
+
+          <div class="footer">
+            <p>Justin M. LaPre &#8212; <a href="http://www.cs.rpi.edu/">Computer Science Department</a> at <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a></p>
+          </div>
+        </div>
+
+      <!-- support retina -->
+      <script type="text/javascript" src="/js/srcset-polyfill.js"></script>
+
+    </body>
+</html>

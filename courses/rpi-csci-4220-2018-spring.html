@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Justin M. LaPre — CSCI 4220 Network Programming</title>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@laprej">
+        <meta name="twitter:creator" content="@laprej">
+        <meta name="twitter:title" content="CSCI 4220 Network Programming">
+        <meta name="twitter:description" content="Syllabus for CSCI 4220 Network Programming.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/css/madoko.css" rel="stylesheet">
+        <link href="/css/theme.css" rel="stylesheet">
+        <link href="/css/syntax.css" rel="stylesheet">
+        <!-- <link href='http://fonts.googleapis.com/css?family=News+Cycle|Inconsolata' rel='stylesheet' type='text/css'> -->
+
+        
+
+    </head>
+    <body>
+      <script src="/js/jquery-2.1.3.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-78734427-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+        <div class="container">
+          <div class="header">
+            <ul class="nav nav-pills pull-right">
+              
+              
+                <li >
+                  
+                  <a href="/" >
+                  
+                  
+                  Home
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/courses/" >
+                  
+                  
+                  Courses
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/cv.html" >
+                  
+                  
+                  CV
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/calendar.html" >
+                  
+                  
+                  Calendar
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="/posts/" >
+                  
+                  
+                  Posts
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://github.com/laprej">
+                  
+                  
+                  <img src="/img/GitHub-Mark.png" srcset="/img/GitHub-Mark@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+                <li >
+                  
+                  <a href="http://twitter.com/laprej">
+                  
+                  
+                  <img src="/img/twitter-logo.png" srcset="/img/twitter-logo@2x.png 2x" />
+                  
+                  
+                  </a>
+                </li>
+              
+            </ul>
+            <h2>Justin M. LaPre</h2>
+          </div>
+
+          <div style="text-align:justify"><h2 id="csci-4220-network-programming">CSCI 4220, Network Programming</h2>
+
+<h3 id="spring-2018">Spring 2018</h3>
+
+<p>Dr. Justin M. LaPre<br>
+Department of Computer Science<br>
+Rensselaer Polytechnic Institute<br>
+110 8th Street Troy, New York 12180<br>
+Course web site: <a href="https://piazza.com/rpi/spring2018/csci4220">https://piazza.com/rpi/spring2018/csci4220</a><br>
+Office Hours: Amos Eaton 206, Monday and Thursday, 6 p.m. to 7 p.m. (and by appointment).<br>
+Class Time and Location: DCC 318, Monday and Thursday, 4 p.m. to 5:50 p.m.</p>
+
+<p><strong>Like the Constitution, this syllabus should be considered a &quot;living
+document&quot; in that it is subject to change.  You will be notified of
+any changes made.</strong></p>
+
+<h3 id="course-description">Course Description</h3>
+
+<p>Programming with an overview of the principles of computer networks,
+including an overview of the OSI reference model and various popular
+network protocol suites. Concentration on Unix interprocess
+communication (IPC), network programming using TCP and UDP, as well as
+client-side and mobile programming. Programming projects in C++ are
+required.</p>
+
+<p>The first half of each class will be classic lecture-style while the
+second half of class will be closer in nature to a lab.  Accompanying
+documents will be available via either Piazza or Submitty.  Students
+should bring their laptops as they will be required for the lab
+portion.</p>
+
+<p><strong>Prerequisite</strong> CSCI 4210 (Operating Systems).</p>
+
+<h3 id="required-textbooks">Required Textbooks</h3>
+
+<p><em>Unix Network Programming, Volume 1: The Sockets Networking API, 3rd
+Edition</em> (2003), by W. Richard Stevens et al.
+<a href="http://a.co/aE8mNZ4">Amazon link.</a></p>
+
+<h3 id="graduate-teaching-assistants">Graduate Teaching Assistants</h3>
+
+<ul>
+<li>Pan Deng (dengp AT rpi.edu): Amos Eaton 110, Friday 12-2 p.m.</li>
+<li>Yingyi Wu (wuy21 AT rpi.edu)</li>
+</ul>
+
+<h3 id="undergraduate-mentors">Undergraduate Mentors</h3>
+
+<ul>
+<li>Hannah Deen</li>
+<li>Anthony DeLorenzo</li>
+<li>Max Shavrick</li>
+<li>Xinyue Yan</li>
+</ul>
+
+<h3 id="schedule-of-topics">Schedule of Topics</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Date</th>
+<th style="text-align: right">Topic</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">1/18</td>
+<td style="text-align: right">History / OSI model; Unix commands</td>
+</tr>
+<tr>
+<td style="text-align: left">1/22</td>
+<td style="text-align: right">Prof. LaPre unavailable, possible guest lecture TBA</td>
+</tr>
+<tr>
+<td style="text-align: left">1/25</td>
+<td style="text-align: right">Prof. LaPre unavailable, possible guest lecture TBA</td>
+</tr>
+<tr>
+<td style="text-align: left">1/29</td>
+<td style="text-align: right">High level UDP and TCP/IP; UDP sockets</td>
+</tr>
+<tr>
+<td style="text-align: left">2/1</td>
+<td style="text-align: right">Byte ordering, misc. inet functions</td>
+</tr>
+<tr>
+<td style="text-align: left">2/5</td>
+<td style="text-align: right">tftp; Sorcerer’s Apprentice; <code>SIGALRM</code></td>
+</tr>
+<tr>
+<td style="text-align: left">2/8</td>
+<td style="text-align: right">TCP sockets (SOCK_STREAM); Client / server model</td>
+</tr>
+<tr>
+<td style="text-align: left">2/12</td>
+<td style="text-align: right">select (I/O Multiplexing); Bonjour (Zeroconf) / Service Discovery</td>
+</tr>
+<tr>
+<td style="text-align: left">2/15</td>
+<td style="text-align: right">TCP 3 Way Handshake, TCP States, TCP Close</td>
+</tr>
+<tr>
+<td style="text-align: left">2/20</td>
+<td style="text-align: right">TCP congestion control, ACK, windows, etc</td>
+</tr>
+<tr>
+<td style="text-align: left">2/22</td>
+<td style="text-align: right">Design Patterns</td>
+</tr>
+<tr>
+<td style="text-align: left">2/26</td>
+<td style="text-align: right">Network Protocols</td>
+</tr>
+<tr>
+<td style="text-align: left">3/1</td>
+<td style="text-align: right">Threads</td>
+</tr>
+<tr>
+<td style="text-align: left">3/5</td>
+<td style="text-align: right">IRC</td>
+</tr>
+<tr>
+<td style="text-align: left">3/8</td>
+<td style="text-align: right">Broadcasting</td>
+</tr>
+<tr>
+<td style="text-align: left">3/12-3/16</td>
+<td style="text-align: right">SPRING BREAK</td>
+</tr>
+<tr>
+<td style="text-align: left">3/19</td>
+<td style="text-align: right">rsync</td>
+</tr>
+<tr>
+<td style="text-align: left">3/22</td>
+<td style="text-align: right">Bit Torrent / DHT / P2P</td>
+</tr>
+<tr>
+<td style="text-align: left">3/26</td>
+<td style="text-align: right">Socket Options; Bufferbloat, ECN</td>
+</tr>
+<tr>
+<td style="text-align: left">3/29</td>
+<td style="text-align: right">CORBA</td>
+</tr>
+<tr>
+<td style="text-align: left">4/2</td>
+<td style="text-align: right">IPv4/IPv6 addressing, DNS, gethost*(), nslookup</td>
+</tr>
+<tr>
+<td style="text-align: left">4/5</td>
+<td style="text-align: right">No class</td>
+</tr>
+<tr>
+<td style="text-align: left">4/9</td>
+<td style="text-align: right">HTTP</td>
+</tr>
+<tr>
+<td style="text-align: left">4/12</td>
+<td style="text-align: right">SSL</td>
+</tr>
+<tr>
+<td style="text-align: left">4/16</td>
+<td style="text-align: right">MPI</td>
+</tr>
+<tr>
+<td style="text-align: left">4/19</td>
+<td style="text-align: right">OpenMP</td>
+</tr>
+<tr>
+<td style="text-align: left">4/23</td>
+<td style="text-align: right">Alternatives to TCP: QUIC, SCTP</td>
+</tr>
+<tr>
+<td style="text-align: left">4/26</td>
+<td style="text-align: right">IPFS</td>
+</tr>
+<tr>
+<td style="text-align: left">4/30</td>
+<td style="text-align: right">Overflow Day</td>
+</tr>
+</tbody></table>
+
+<h3 id="schedule-of-assignments-and-altered-class-days">Schedule of Assignments and altered class days</h3>
+
+<ul>
+<li>Assignment 1 due February 13th.</li>
+<li>February 20th, Monday schedule, we have class.</li>
+<li>Assignment 2 due February 27th.</li>
+<li>Assignment 3 due March 20th.</li>
+<li>March 30 - April 6: GM Week.</li>
+<li>Assignment 4 due April 3rd.</li>
+<li>Assignment 5 due April 17th.</li>
+<li>Assignment 6 due May 1st.</li>
+</ul>
+
+<h3 id="grading-and-other-class-policies">Grading and Other Class Policies</h3>
+
+<ul>
+<li> 72%: 6 programming projects (12 points each)</li>
+<li> 28%: In-class labs</li>
+</ul>
+
+<p><strong>We will also be using Submitty (AKA the homework server).  Details
+  will follow on Piazza.</strong></p>
+
+<p><strong>Attendance Policy</strong>: Attendance at lectures is not required, but
+be aware that I may include material not necessarily covered in the
+text or on the web page.  You are responsible for all announcements
+made in lecture (e.g., any change in due dates).</p>
+
+<p><strong>Late Assignments Policy</strong>: Three late days are permitted for
+assignments.  They will be consumed in whole day increments. In other
+words, if you are one hour late, that will count as one day. 25 hours
+late will count as two days, etc. Once these are exhausted, late
+assignments will not be graded.  However, additional late days can
+be earned for every six points (not labs) earned through labs.</p>
+
+<p><strong>Late Labs Policy</strong>: Late labs will not be accepted but three bonus
+labs will be awarded to all students. For example, if you miss 4 of 10
+labs, you will only be penalized for missing 1.  Your lab score cannot
+rise above 100%.</p>
+
+<p><strong>Grade Disputes</strong>: Grade disputes must be made within 10 days.
+After 10 days has elapsed, the grade on record will stand.</p>
+
+<p><strong>Grade Modifiers Policy</strong>: Grade modifiers will be used in this
+class. See the course catalog for more details.  There is no A+ nor is
+a D- allowed under the RPI Grade Modifier Policy.</p>
+
+<p><strong>Assignment Grading Criteria</strong>: Your submission must include the
+  following items:</p>
+
+<ul>
+<li>A <code>Makefile</code> that will build your program</li>
+<li>One or more <code>.cpp</code> files</li>
+<li>One or more <code>.h</code> files</li>
+<li>Any other assorted files necessary for proper compilation</li>
+<li>A <code>README</code> file (.txt extension optional) describing your program,
+any issues you encountered, the approximate time you spent on it,
+and the breakdown of work if it&#39;s a group assignment</li>
+</ul>
+
+<p>Programming assignments are graded as follows: 25% for proper comments
+(e.g., each function should indicate what it does) and 75% for a
+correct working implementation. We typically divide the correctness
+points over key functions working. For example, reading -- worth 20
+points, writing -- worth 20 points, and then doing the calculation
+correctly -- worth 35 points. Note that programs that either don&#39;t
+compile or generate a <code>core dump</code> typically get no more than 20 points
+of the 75. Thus, your max score for a &quot;properly commented&quot; program
+that fails in some fundamental way is only 45 points even if you spent
+100 hours of time on it.</p>
+
+<p><strong>Compatibility</strong>: All assignments MUST compile with clang++ and run
+on Ubuntu 14.04.  This is the compiler and operating system on
+Submitty so you will have no problems meeting this requirement.  <em>It
+is worth noting that not all valid C programs are valid C++
+programs.</em>  All C files must compile cleanly with clang++.</p>
+
+<h3 id="students-with-special-needs">Students With Special Needs</h3>
+
+<p>Federal law requires all colleges and universities to provide
+specified types of assistance to students with disabilities.  If you
+require such assistance, please obtain an authorizing memo from
+Disability Services for Students by contacting the Student Health
+Center.  Information about a student&#39;s special needs will be treated
+as confidential.  Please submit a copy of your authorizing memo to
+your professor well in advance of any affected exam or
+assignment. Failure to do so may result in a lack of special
+accommodations.</p>
+
+<h3 id="academic-integrity">Academic Integrity</h3>
+
+<p>While I strongly encourage you to form study groups and work together
+in learning this material, programming assignments are to be done
+individually unless otherwise noted by the assignment/project
+specification. What this means is that you should do whatever is
+necessary to ensure your work remains your work. If during in the
+grading process, it is determined that students shared or duplicated
+work, those students will automatically score a zero for the offense.
+For a second offense, the student or students involved will fail this
+course and a report will be sent to the Dean of Students office which
+could result in additional disciplinary action.  Additionally,
+undergraduates offenders cannot mentor in the future.  In the event a
+graduate student is caught cheating, that student will fail.</p>
+
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+
+<p>By the end of this course, you will be able to:</p>
+
+<ul>
+<li><p>Understand the OSI reference model and a variety of network
+protocols.</p></li>
+<li><p>Implement specific network programming constructs on Unix platforms
+to create robust real-world sockets-based applications.</p></li>
+<li><p>Design and implement client/server programs using a variety of
+protocols and platforms.</p></li>
+<li><p>Apply the concepts of the C programming language to the construction
+of moderately complex software implementation problems.</p></li>
+</ul>
+
+</div>
+
+          <div class="footer">
+            <p>Justin M. LaPre &#8212; <a href="http://www.cs.rpi.edu/">Computer Science Department</a> at <a href="http://www.rpi.edu/">Rensselaer Polytechnic Institute</a></p>
+          </div>
+        </div>
+
+      <!-- support retina -->
+      <script type="text/javascript" src="/js/srcset-polyfill.js"></script>
+
+    </body>
+</html>
